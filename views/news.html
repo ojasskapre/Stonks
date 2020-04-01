@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Stonks</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: #797979">
+	
+	<!-- NAVIGATION BAR -->
+	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+		<ul class="navbar-nav">
+		  <li class="nav-item active">
+				<a class="nav-link" href="/">Stonks</a>
+		  </li>
+		  <li class="nav-item">
+				<a class="nav-link" href="/news">News</a>
+		  </li>
+		</ul>
+    </nav>
+	
+
+    <!-- RSS FEED WIDGET -->
+	<div class="container-fluid">
+	    <br>
+	    <div class="row">
+	    	<div class="col-sm-6">
+	    		<div class="card">
+				  	<div class="card-header" style="background-color:#131734;color: #FFFFFF">Top Stories</div>
+				  	<div class="card-body" style="background-color: #cbd2d1">
+				  		<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:100%;background-color:#transparent;">
+				  			<div id="rsswidget" style="height:auto;">
+				  				<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1583156855050&amp;x=https%3A%2F%2Feconomictimes.indiatimes.com%2Frssfeedstopstories.cms&amp;w=500&amp;h=500&amp;bc=FFFFFF&amp;bw=1&amp;bgc=transparent&amp;m=5&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=false&amp;dc=333333&amp;ds=16&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:100%; height:100%;" id="rssOutput">Reading RSS Feed ...
+				  				</iframe>
+				  			</div>
+				  		</div>
+				  	</div>
+				</div>
+	    	</div>
+	    	<div class="col-sm-6">
+	    		<div class="card">
+				  	<div class="card-header" style="background-color:#131734;color: #FFFFFF">Expert Views</div>
+				  	<div class="card-body" style="background-color: #cbd2d1">
+				  		<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:100%;background-color:#transparent;">
+			    			<div id="rsswidget" style="height:100%;">
+			    				<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1583158386225&amp;x=https%3A%2F%2Feconomictimes.indiatimes.com%2Fmarkets%2Fexpert-view%2Frssfeeds%2F50649960.cms&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=5&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=20&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=16&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:100%; height:100%;" id="rssOutput">Reading RSS Feed ...
+			    				</iframe>
+			    			</div>
+			    		</div>
+				  	</div>
+				</div>
+	    	</div>
+	    </div>
+	    <br>
+	    <div class="row">
+	    	<div class="col-sm-3">
+	    		<div class="card">
+					<div class="card-header" style="background-color:#131734;color: #FFFFFF">Stocks</div>
+					<div class="card-body" style="background-color: #cbd2d1">
+						<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:auto;width:100%;background-color:#transparent;">
+							<div id="rsswidget" style="height:100%">
+								<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1583157362896&amp;x=https%3A%2F%2Feconomictimes.indiatimes.com%2Fmarkets%2Fstocks%2Frssfeeds%2F2146842.cms&amp;w=500&amp;h=500&amp;bc=FFFFFF&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=16&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:100%; height:100%;" id="rssOutput">Reading RSS Feed ...
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    	<div class="col-sm-6">
+	    		<div class="card">
+					<div class="card-header" style="background-color:#131734; color: #FFFFFF">Economy</div>
+					<div class="card-body" style="background-color: #cbd2d1">
+						<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:100%;background-color:#transparent;">
+							<div id="rsswidget" style="height:100%; " >
+								<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1583158028168&amp;x=https%3A%2F%2Feconomictimes.indiatimes.com%2Fnews%2Feconomy%2Frssfeeds%2F1373380680.cms&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=16&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:100%; height:100%;" id="rssOutput">Reading RSS Feed ...
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    	<div class="col-sm-3">
+	    		<div class="card">
+					<div class="card-header" style="background-color:#131734;color: #FFFFFF">Nation and Politics</div>
+					<div class="card-body" style="background-color: #cbd2d1">
+						<div id="widgetmain" style="text-align:left;overflow-y:auto;overflow-x:hidden;width:100%;background-color:#transparent;">
+							<div id="rsswidget" style="height:100%;">
+								<iframe src="http://us1.rssfeedwidget.com/getrss.php?time=1583158683079&amp;x=https%3A%2F%2Feconomictimes.indiatimes.com%2Fnews%2Fpolitics-and-nation%2Frssfeeds%2F1052732854.cms&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=5&amp;it=false&amp;t=(default)&amp;tc=333333&amp;ts=20&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=20&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=16&amp;idt=true&amp;dtc=284F2D&amp;dts=12" border="0" hspace="0" vspace="0" frameborder="no" marginwidth="0" marginheight="0" style="border:0; padding:0; margin:0; width:100%; height:100%;" id="rssOutput">Reading RSS Feed ...
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+	    	</div>
+	    </div>
+	</div>
+
+</body>
+</html>
