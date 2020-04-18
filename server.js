@@ -2,12 +2,15 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 
+var cookieParser = require('cookie-parser');
+
 var index = require('./routes/index');
 var news = require('./routes/news');
 
 var port = 3000;
 
 var app = express();
+app.use(cookieParser());
 
 // View Engine
 app.set('views', path.join(__dirname, 'views'));
