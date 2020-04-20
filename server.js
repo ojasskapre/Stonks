@@ -4,6 +4,9 @@ var bodyParser = require('body-parser');
 
 var cookieParser = require('cookie-parser');
 
+require('./models/db');
+const stocksController = require('./controllers/stocksController');
+
 var index = require('./routes/index');
 var news = require('./routes/news');
 
@@ -26,6 +29,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 app.use('/', index);
 app.use('/news', news);
+app.use('/stock', stocksController);
 
 app.get('*', function (req, res, next) {
   res.render('error.html');

@@ -6,16 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var users_1 = require("./users");
+var RegFormComponent = (function () {
+    function RegFormComponent() {
+        this.user = new users_1.User('ojas', 'ojas123', 9876543212, 'ojas.kapre@somaiya.edu');
+        this.submitted = false;
     }
-    return AppComponent;
+    RegFormComponent.prototype.onSubmit = function () { this.submitted = true; };
+    return RegFormComponent;
 }());
-AppComponent = __decorate([
+RegFormComponent = __decorate([
     core_1.Component({
-        selector: 'my-app',
-        template: "<reg_form></reg_form>",
+        selector: 'reg_form',
+        templateUrl: './app/register.component.html'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], RegFormComponent);
+exports.RegFormComponent = RegFormComponent;
+//# sourceMappingURL=register.component.js.map

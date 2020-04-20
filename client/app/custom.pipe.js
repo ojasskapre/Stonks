@@ -6,16 +6,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 var core_1 = require("@angular/core");
-var AppComponent = (function () {
-    function AppComponent() {
+var CustomPipe = (function () {
+    function CustomPipe() {
     }
-    return AppComponent;
+    CustomPipe.prototype.transform = function (value, multiply) {
+        var mul = parseFloat(multiply);
+        return mul * value;
+    };
+    return CustomPipe;
 }());
-AppComponent = __decorate([
-    core_1.Component({
-        selector: 'my-app',
-        template: "<reg_form></reg_form>",
+CustomPipe = __decorate([
+    core_1.Pipe({
+        name: 'Custom'
     })
-], AppComponent);
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+], CustomPipe);
+exports.CustomPipe = CustomPipe;
+//# sourceMappingURL=custom.pipe.js.map

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Stonks</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <h3>Student List</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Stock Name</th>
+                    <th>Stock Exchange</th>
+                    <th>Buy Price</th>
+                    <th>Quantity</th>
+                    <th>Total Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(var i=0; i < list.length; i++) { %>
+                <tr>
+                    <td><%= list[i].stockName %></td>
+                    <td><%= list[i].stockExchange %></td>
+                    <td><%= list[i].buyPrice %></td>
+                    <td><%= list[i].quantity %></td>
+                    <td><%= list[i].buyPrice * list[i].quantity %></td>
+                    <td>
+                        <a class="btn btn-primary" href="/stock/<%= list[i]._id %>">Update</a>
+                        <a class="btn btn-danger" href="/stock/delete/<%= list[i]._id %>" onclick="return confirm('Are you sure to delete this record ?');">Delete</a>
+                    </td>
+                </tr>
+                <% } %>
+            </tbody>
+        </table>
+        <a class="btn btn-primary" href="/stock">Add New</a>
+    </div>
+</body>
+
+</html>
